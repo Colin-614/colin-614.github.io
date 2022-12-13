@@ -4,6 +4,32 @@
   
   
   <entry>
+    <title>LaTex 快速上手指南</title>
+    <link href="/2022/12/14/LaTex%20getting%20started/"/>
+    <url>/2022/12/14/LaTex%20getting%20started/</url>
+    
+    <content type="html"><![CDATA[<h1 id="LaTex-getting-started"><a href="#LaTex-getting-started" class="headerlink" title="LaTex getting started"></a>LaTex getting started</h1><h2 id="structure-grammar"><a href="#structure-grammar" class="headerlink" title="structure grammar"></a>structure grammar</h2><p>\documentclass[UTF8]{ctexart}/{article}/</p><p>\title{title}<br>\author{Colin Song}<br>\date{\today} <em>(today’s date)</em></p><p>\begin{document}</p><p>\matetitle <em>(create a title before body)</em></p><p>main body</p><p>\end{document}</p><h2 id="basic-grammar"><a href="#basic-grammar" class="headerlink" title="basic grammar"></a>basic grammar</h2><table><thead><tr><th>体现</th><th>语法</th></tr></thead><tbody><tr><td>加粗</td><td>\textbf{}</td></tr><tr><td>斜体</td><td>\textit{}</td></tr><tr><td>下划线</td><td>\underline{}</td></tr><tr><td>部</td><td>\part{}</td></tr><tr><td>章</td><td>\chapter{}</td></tr><tr><td>新部分</td><td>\section{name}</td></tr><tr><td>子部分</td><td>\subsection{name}</td></tr><tr><td>图片</td><td>\includegraphics{}</td></tr></tbody></table><h3 id="picture"><a href="#picture" class="headerlink" title="picture"></a>picture</h3><p>需要在前言中引用fraphicx包</p><p><code>\usepackage&#123;graphicx&#125;</code></p><p>随后在正文中使用以下代码在当前位置插入图片，head为图片文件名(可以省略.png拓展名)</p><p><code>\includegraphics&#123;head&#125;</code></p><p>如果遇到图片过大的情况，需要给与更改大小的指令</p><p><code>\includegraphics[width=0.5\textwidth]&#123;head&#125;</code></p><p>如果需要给图片添加标题，可以将图片嵌套在一个figure环境中</p><pre><code class="hljs">\begin&#123;figure&#125;\centering 图片居中\includegraphics[width=0.5\textwidth]&#123;head&#125;\caption&#123;标题&#125;\end&#123;figure&#125;</code></pre><h3 id="List"><a href="#List" class="headerlink" title="List"></a>List</h3><h4 id="unordered-list"><a href="#unordered-list" class="headerlink" title="unordered list"></a>unordered list</h4><pre><code class="hljs">\begin&#123;itemize&#125;\item 列表项1\item 列表项2\end&#123;itemize&#125;</code></pre><h4 id="ordered-list"><a href="#ordered-list" class="headerlink" title="ordered list"></a>ordered list</h4><pre><code class="hljs">\begin&#123;enumerat&#125;\item 列表项1\item 列表项2\end&#123;enumerat&#125;</code></pre><h3 id="Math-Formulas"><a href="#Math-Formulas" class="headerlink" title="Math Formulas"></a>Math Formulas</h3><p>coming soon</p><h3 id="Table"><a href="#Table" class="headerlink" title="Table"></a>Table</h3><h4 id="基础表格"><a href="#基础表格" class="headerlink" title="基础表格"></a>基础表格</h4><pre><code class="hljs">\begin&#123;tabular&#125;&#123; | l | c | r | &#125; 代表列表有三列，左中右对齐\hline单元格1 &amp; 单元格2 &amp; 单元格3 \\\hline单元格4 &amp; 单元格5 &amp; 单元格6 \\\hline单元格7 &amp; 单元格8 &amp; 单元格9 \\\hline\end&#123;tabular&#125;</code></pre><h4 id="单独指定列宽度"><a href="#单独指定列宽度" class="headerlink" title="单独指定列宽度"></a>单独指定列宽度</h4><p>p代替c，p代表paragraph，是一种允许设置列宽的列格式.</p><pre><code class="hljs">\begin&#123;tabular&#125;&#123; | p&#123;2cm&#125; | c | r | &#125;\hline单元格1 &amp; 单元格2 &amp; 单元格3 \\\hline单元格4 &amp; 单元格5 &amp; 单元格6 \\\hline单元格7 &amp; 单元格8 &amp; 单元格9 \\\hline\end&#123;tabular&#125;</code></pre><h4 id="图表标题"><a href="#图表标题" class="headerlink" title="图表标题"></a>图表标题</h4><pre><code class="hljs">\begin&#123;table&#125;\center\begin&#123;tabular&#125;&#123; | l | c | r | &#125;\hline单元格1 &amp; 单元格2 &amp; 单元格3 \\\hline单元格4 &amp; 单元格5 &amp; 单元格6 \\\hline单元格7 &amp; 单元格8 &amp; 单元格9 \\\hline\end&#123;tabular&#125;\caption&#123;title&#125;\end&#123;table&#125;</code></pre><h2 id="Environment-in-VSCode"><a href="#Environment-in-VSCode" class="headerlink" title="Environment in VSCode"></a>Environment in VSCode</h2><p>在已经安装Tex Live的前提下，在 VSCode 中下载 LaTex Workshop 插件即可.<br>快捷键 <strong>Crtl+Alt+V</strong> 进入预览窗口.<br>保存后会自动在同目录下生成PDF文件.</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>movie</title>
+    <link href="/2022/08/05/movie/"/>
+    <url>/2022/08/05/movie/</url>
+    
+    <content type="html"><![CDATA[<h1 id="一个电影观后记录"><a href="#一个电影观后记录" class="headerlink" title="一个电影观后记录"></a>一个电影观后记录</h1><h2 id="2022-8-1-《我和我的家乡》"><a href="#2022-8-1-《我和我的家乡》" class="headerlink" title="2022.8.1 《我和我的家乡》"></a>2022.8.1 《我和我的家乡》</h2><p>如果让我用一句话来总结，这部片是主旋律的一种正确的表达方式。</p><p>影片通过描写一个个或小或大的“小人物”来体现中心思想。延续《我和我的祖国》集体创作的方式，不仅让影片内容变得丰富多维，也可以让我们感受到不同导演的创作思路。《家乡》的五个短片充满了巧思，将喜剧的类型深度与主题情感很好地结合到一起。实际上，我认为许多人眼中充满贬义的“小品电影”一词，恰恰最能概括五部短片的优点。尤其对于短片而言，我并不认为“小品电影”有多么低级，能将小品的意趣以合理方式纳入到镜头语言内，同样考验创作者的影像编织能力。《家乡》里面的五个短故事，都是文本层面合格的小品，而其中四个，又以小品结构为出发点，建构出了一整套的影像表现力和情感描绘，以及文本主题中的乡土情结，可以说是几位导演一次集中的超水平发挥。</p><p>在农村人才甚至人口流失严重的今天，这部片子的出现体现了国家对于农村艰难现状的思考以及渴求改变的愿景，片中毫不避讳戳中双轨制医保、山区交通、农村教育、西北农业等等几条现今的痛点。但是片中过度强调网红、短视频、带货，显然不符合大部分农村的现状与未来。</p><p>有人说，回不去的永远是家乡。如果抬杠一些说，家乡永远在那里，回不去的是追求物质与自我精神的心。</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>C++基础入门</title>
     <link href="/2022/07/27/C++%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/"/>
     <url>/2022/07/27/C++%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/</url>
